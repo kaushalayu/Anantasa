@@ -36,7 +36,8 @@
 .projects-page__img {
   position: relative;
   width: 100%;
-  height: 260px; /* 🔥 same height for all images */
+  height: 260px;
+  /* 🔥 same height for all images */
   overflow: hidden;
   border-radius: 10px;
 }
@@ -45,7 +46,8 @@
 .projects-page__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* image crop but perfect fit */
+  object-fit: cover;
+  /* image crop but perfect fit */
   transition: transform 0.4s ease;
 }
 
@@ -81,11 +83,13 @@
   border-radius: 50%;
   font-size: 16px;
 }
+
 @media (max-width: 768px) {
   .projects-page__img {
     height: 200px;
   }
 }
+
 .project-detail__img img,
 .project-detail__gallery img {
   width: 100%;
@@ -158,12 +162,10 @@
   position: absolute;
   inset: -2px;
   border-radius: 24px;
-  background: linear-gradient(
-    120deg,
-    rgba(11, 230, 15, 0.6),
-    rgba(255, 174, 0, 0.5),
-    rgba(11, 230, 15, 0.6)
-  );
+  background: linear-gradient(120deg,
+      rgba(11, 230, 15, 0.6),
+      rgba(255, 174, 0, 0.5),
+      rgba(11, 230, 15, 0.6));
   z-index: -1;
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -224,7 +226,8 @@
 }
 
 .causes-two__img img {
-  height: 320px; /* aap 300–380px bhi kar sakte ho */
+  height: 320px;
+  /* aap 300–380px bhi kar sakte ho */
   width: 100%;
   object-fit: cover;
 }
@@ -243,8 +246,10 @@
 
 .services-two__shape-1 {
   position: absolute;
-  top: -30px; /* value badha–ghata sakte ho */
+  top: -30px;
+  /* value badha–ghata sakte ho */
 }
+
 @media (max-width: 768px) {
   .services-two__shape-1 {
     top: -15px;
@@ -356,11 +361,13 @@
   background: var(--thm-secondary);
   color: #fff;
 }
+
 .custom-title {
   font-size: 46px;
   font-weight: 700;
   margin-bottom: 20px;
 }
+
 .tab-btn {
   font-size: 18px !important;
 }
@@ -575,11 +582,8 @@
 
 .why-we-exist-section {
   padding: 100px 0;
-  background: linear-gradient(
-    135deg,
-    rgba(250, 75, 28, 0.03) 0%,
-    rgba(38, 204, 140, 0.03) 100%
-  );
+  background-color: #f9f9f9;
+  /* Simple solid light background */
   position: relative;
   overflow: hidden;
 }
@@ -591,11 +595,8 @@
   right: -10%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(
-    circle,
-    rgba(250, 75, 28, 0.08) 0%,
-    transparent 70%
-  );
+  background: rgba(250, 75, 28, 0.03);
+  /* Simple solid transparency */
   border-radius: 50%;
   z-index: 0;
 }
@@ -656,7 +657,8 @@
   right: 0;
   width: 100px;
   height: 100px;
-  background: linear-gradient(135deg, var(--thm-primary), var(--thm-secondary));
+  background: var(--thm-primary);
+  /* Simplified background */
   opacity: 0.05;
   border-radius: 50%;
   transform: translate(50%, -50%);
@@ -677,7 +679,8 @@
 .problem-icon {
   width: 56px;
   height: 56px;
-  background: linear-gradient(135deg, var(--thm-primary), var(--thm-secondary));
+  background: var(--thm-primary);
+  /* Simple solid color */
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -711,11 +714,8 @@
 }
 
 .solution-statement {
-  background: linear-gradient(
-    135deg,
-    var(--thm-primary) 0%,
-    var(--thm-secondary) 100%
-  );
+  background: var(--thm-primary);
+  /* Simple solid primary color */
   color: #fff;
   padding: 50px 45px;
   border-radius: 18px;
@@ -734,13 +734,11 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 2px,
-    rgba(255, 255, 255, 0.05) 2px,
-    rgba(255, 255, 255, 0.05) 4px
-  );
+  background: repeating-linear-gradient(45deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.05) 2px,
+      rgba(255, 255, 255, 0.05) 4px);
   animation: moveStripes 20s linear infinite;
 }
 
@@ -767,6 +765,7 @@
   0% {
     transform: translate(0, 0);
   }
+
   100% {
     transform: translate(50px, 50px);
   }
@@ -777,6 +776,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -824,11 +824,9 @@
 
 .mission-vision-section {
   padding: 100px 0;
-  background: linear-gradient(
-    135deg,
-    #ffffff 0%,
-    rgba(241, 249, 251, 0.5) 100%
-  );
+  background: linear-gradient(135deg,
+      #ffffff 0%,
+      rgba(241, 249, 251, 0.5) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -840,11 +838,9 @@
   left: -10%;
   width: 500px;
   height: 500px;
-  background: radial-gradient(
-    circle,
-    rgba(38, 204, 140, 0.08) 0%,
-    transparent 70%
-  );
+  background: radial-gradient(circle,
+      rgba(38, 204, 140, 0.08) 0%,
+      transparent 70%);
   border-radius: 50%;
   z-index: 0;
 }
@@ -880,11 +876,9 @@
   left: 0;
   right: 0;
   height: 150%;
-  background: radial-gradient(
-    circle at 50% 0%,
-    rgba(250, 75, 28, 0.08),
-    transparent 70%
-  );
+  background: radial-gradient(circle at 50% 0%,
+      rgba(250, 75, 28, 0.08),
+      transparent 70%);
   opacity: 0;
   transition: opacity 0.4s ease;
   pointer-events: none;
@@ -902,7 +896,7 @@
 .mission-vision-icon {
   width: 85px;
   height: 85px;
-  background: linear-gradient(135deg, var(--thm-primary), var(--thm-secondary));
+  background: red;
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -977,11 +971,9 @@
 
 .impact-glance-section {
   padding: 100px 0;
-  background: linear-gradient(
-    135deg,
-    rgba(250, 75, 28, 0.03) 0%,
-    rgba(241, 249, 251, 0.5) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(250, 75, 28, 0.03) 0%,
+      rgba(241, 249, 251, 0.5) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -1027,7 +1019,7 @@
 .impact-card__icon {
   width: 68px;
   height: 68px;
-  background: linear-gradient(135deg, var(--thm-primary), var(--thm-secondary));
+  background: red;
   border-radius: 14px;
   display: flex;
   align-items: center;
@@ -1112,21 +1104,17 @@
   right: -15%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(
-    circle,
-    rgba(38, 204, 140, 0.08) 0%,
-    transparent 70%
-  );
+  background: radial-gradient(circle,
+      rgba(38, 204, 140, 0.08) 0%,
+      transparent 70%);
   border-radius: 50%;
   z-index: 0;
 }
 
 .values-card {
-  background: linear-gradient(
-    135deg,
-    #ffffff 0%,
-    rgba(38, 204, 140, 0.02) 100%
-  );
+  background: linear-gradient(135deg,
+      #ffffff 0%,
+      rgba(38, 204, 140, 0.02) 100%);
   padding: 40px 32px;
   border-radius: 16px;
   text-align: center;
@@ -1167,7 +1155,7 @@
 .values-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--thm-primary), var(--thm-secondary));
+  background: red;
   border-radius: 18px;
   display: flex;
   align-items: center;
@@ -1240,11 +1228,9 @@
 
 .cta-content {
   position: relative;
-  background: linear-gradient(
-    135deg,
-    var(--thm-primary) 0%,
-    var(--thm-secondary) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--thm-primary) 0%,
+      var(--thm-secondary) 100%);
   border-radius: 24px;
   margin: 0 20px;
   padding: 80px 50px;
@@ -1275,6 +1261,7 @@
   0% {
     transform: translate(0, 0);
   }
+
   100% {
     transform: translate(80px, 80px);
   }
@@ -1696,6 +1683,7 @@ img {
 
 /* Small Tablet (768px) */
 @media (max-width: 768px) {
+
   /* General image responsiveness */
   img {
     width: 100%;
@@ -1766,6 +1754,7 @@ img {
 
 /* Mobile (480px - 767px) */
 @media (max-width: 480px) {
+
   /* Team images - smaller on mobile */
   .team-two__img-box {
     aspect-ratio: 1/1;
@@ -1837,6 +1826,7 @@ img {
 
 /* Extra Small (< 360px) */
 @media (max-width: 360px) {
+
   .team-two__img-box,
   .causes-two__img-box {
     height: 160px;
@@ -1890,7 +1880,7 @@ img {
   }
 
   /* Fix content spacing */
-  .row > [class*="col-"] {
+  .row>[class*="col-"] {
     margin-bottom: 20px;
   }
 }
@@ -1995,11 +1985,9 @@ img {
 ================================ */
 
 .latest-updates-section {
-  background: linear-gradient(
-    135deg,
-    rgba(250, 75, 28, 0.03) 0%,
-    rgba(241, 249, 251, 0.5) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(250, 75, 28, 0.03) 0%,
+      rgba(241, 249, 251, 0.5) 100%);
   padding: 100px 0;
   position: relative;
   overflow: hidden;
@@ -2012,11 +2000,9 @@ img {
   right: -10%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(
-    circle,
-    rgba(38, 204, 140, 0.08) 0%,
-    transparent 70%
-  );
+  background: radial-gradient(circle,
+      rgba(38, 204, 140, 0.08) 0%,
+      transparent 70%);
   border-radius: 50%;
   z-index: 0;
 }
